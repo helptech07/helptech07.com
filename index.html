@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,254 +9,159 @@
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial;
-background:#0f172a;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
 color:white;
+overflow-x:hidden;
 }
 
 header{
-padding:20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:#111827;
+padding:20px 8%;
+backdrop-filter:blur(10px);
+background:rgba(255,255,255,0.05);
+position:sticky;
+top:0;
 }
 
 .logo{
-font-size:28px;
+font-size:32px;
 font-weight:bold;
 color:#38bdf8;
+text-shadow:0 0 15px #38bdf8;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:10px;
-}
-
-.hero{
-text-align:center;
-padding:100px 20px;
-}
-
-.hero h1{
-font-size:55px;
-}
-
-.hero p{
-font-size:20px;
-color:#cbd5e1;
-}
-
-.btn{
-padding:15px 30px;
-background:#38bdf8;
-border:none;
-border-radius:10px;
+margin-left:20px;
 font-size:18px;
-cursor:pointer;
-margin-top:20px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:40px;
-}
-
-.card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
-text-align:center;
 transition:0.3s;
 }
 
-.card:hover{
-transform:scale(1.05);
-}
-
-footer{
-text-align:center;
-padding:20px;
-background:#111827;
-margin-top:40px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">HelpTech07</div>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Emergency</a>
-<a href="#">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Find Help Near You</h1>
-
-<p>Doctors, Cabs, Emergency and Local Services</p>
-
-<button class="btn">Get Started</button>
-
-</section>
-
-<section class="services">
-
-<div class="card">
-<h2>👨‍⚕️ Doctors</h2>
-<p>Find nearby doctors instantly</p>
-</div>
-
-<div class="card">
-<h2>🚕 Cab Service</h2>
-<p>Book nearby cab quickly</p>
-</div>
-
-<div class="card">
-<h2>🚑 Emergency</h2>
-<p>24x7 emergency support</p>
-</div>
-
-<div class="card">
-<h2>🔧 Electrician</h2>
-<p>Trusted workers near you</p>
-</div>
-
-</section>
-
-<footer>
-
-<p>© 2026 HelpTech07 | All Rights Reserved</p>
-
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>HelpTech07</title>
-
-<style>
-
-body{
-margin:0;
-font-family:Arial;
-background:#0f172a;
-color:white;
-}
-
-header{
-background:#111827;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
+nav a:hover{
 color:#38bdf8;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin:10px;
-}
-
 .hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:80px 20px;
+padding:20px;
 }
 
 .hero h1{
-font-size:55px;
+font-size:70px;
+margin-bottom:20px;
+text-shadow:0 0 20px #38bdf8;
 }
 
 .hero p{
-font-size:20px;
+font-size:22px;
 color:#cbd5e1;
+margin-bottom:30px;
 }
 
 .search{
-padding:15px;
-width:70%;
-max-width:500px;
+width:80%;
+max-width:600px;
+padding:18px;
 border:none;
-border-radius:10px;
+border-radius:50px;
 font-size:18px;
-margin-top:20px;
+outline:none;
+background:white;
+color:black;
 }
 
 .btn{
-padding:15px 30px;
-background:#38bdf8;
+margin-top:25px;
+padding:15px 35px;
 border:none;
-border-radius:10px;
+border-radius:50px;
+background:#38bdf8;
 font-size:18px;
 cursor:pointer;
-margin-top:20px;
+transition:0.3s;
+font-weight:bold;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 20px #38bdf8;
 }
 
 .sos{
 background:red;
 color:white;
-padding:15px 30px;
+margin-top:20px;
+padding:15px 35px;
 border:none;
-border-radius:10px;
+border-radius:50px;
 font-size:20px;
 cursor:pointer;
-margin-top:20px;
+animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
 }
 
 .services{
+padding:80px 8%;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-padding:40px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .card{
-background:#1e293b;
-padding:30px;
-border-radius:15px;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.1);
+backdrop-filter:blur(15px);
+padding:40px 20px;
+border-radius:25px;
 text-align:center;
-transition:0.3s;
+transition:0.4s;
 }
 
 .card:hover{
-transform:scale(1.05);
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(56,189,248,0.5);
+}
+
+.card h2{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.card p{
+color:#cbd5e1;
+font-size:17px;
 }
 
 footer{
-background:#111827;
+padding:30px;
 text-align:center;
-padding:20px;
-margin-top:40px;
+background:rgba(255,255,255,0.05);
+margin-top:50px;
+font-size:16px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -275,19 +181,15 @@ margin-top:40px;
 
 <section class="hero">
 
-<h1>Find Help Near You</h1>
+<h1>Find Help Instantly</h1>
 
-<p>Doctors, Cabs, Emergency and Local Services</p>
+<p>Doctors • Ambulance • Cabs • Electricians • Emergency Help</p>
 
-<input type="text" placeholder="Search services near you..." class="search">
-
-<br>
+<input type="text" class="search" placeholder="Search services near you...">
 
 <button class="btn">Get Started</button>
 
-<br>
-
-<button class="sos">SOS Emergency</button>
+<button class="sos">🚨 SOS Emergency</button>
 
 <br><br>
 
@@ -301,51 +203,42 @@ margin-top:40px;
 
 <div class="card">
 <h2>👨‍⚕️ Doctors</h2>
-<p>Find nearby doctors instantly</p>
+<p>Find trusted nearby doctors instantly.</p>
 </div>
 
 <div class="card">
 <h2>🚕 Cab Service</h2>
-<p>Book nearby cab quickly</p>
+<p>Quick cab booking near your location.</p>
 </div>
 
 <div class="card">
 <h2>🚑 Ambulance</h2>
-<p>24x7 emergency support</p>
+<p>Emergency medical support anytime.</p>
 </div>
 
 <div class="card">
 <h2>🔧 Electrician</h2>
-<p>Trusted workers near you</p>
+<p>Verified electricians near you.</p>
 </div>
 
 <div class="card">
 <h2>🚓 Police</h2>
-<p>112</p>
-</div>
-
-<div class="card">
-<h2>🚑 Ambulance Number</h2>
-<p>108</p>
+<p>Emergency Number: 112</p>
 </div>
 
 <div class="card">
 <h2>🔥 Fire Brigade</h2>
-<p>101</p>
-</div>
-
-<div class="card">
-<h2>👩 Women Helpline</h2>
-<p>1090</p>
+<p>Emergency Number: 101</p>
 </div>
 
 </section>
 
 <footer>
 
-<p>© 2026 HelpTech07 | All Rights Reserved</p>
+<p>© 2026 HelpTech07 | Built for Smart Emergency Help</p>
 
 </footer>
 
 </body>
+</html>
 </html>
