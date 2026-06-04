@@ -17,7 +17,7 @@ font-family:Arial;
 }
 
 body{
-background:linear-gradient(135deg,#0f172a,#1e293b,#020617);
+background:linear-gradient(135deg,#020617,#0f172a,#1e293b);
 color:white;
 overflow-x:hidden;
 }
@@ -27,10 +27,11 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 padding:20px 8%;
-backdrop-filter:blur(10px);
 background:rgba(255,255,255,0.05);
+backdrop-filter:blur(10px);
 position:sticky;
 top:0;
+z-index:1000;
 }
 
 .logo{
@@ -82,7 +83,6 @@ border:none;
 border-radius:50px;
 font-size:18px;
 outline:none;
-background:white;
 color:black;
 }
 
@@ -121,8 +121,16 @@ animation:pulse 1s infinite;
 100%{transform:scale(1);}
 }
 
+.section-title{
+text-align:center;
+font-size:40px;
+margin-top:60px;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
 .services{
-padding:80px 8%;
+padding:30px 8%;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
@@ -132,7 +140,7 @@ gap:30px;
 background:rgba(255,255,255,0.08);
 border:1px solid rgba(255,255,255,0.1);
 backdrop-filter:blur(15px);
-padding:40px 20px;
+padding:35px 20px;
 border-radius:25px;
 text-align:center;
 transition:0.4s;
@@ -151,6 +159,17 @@ margin-bottom:15px;
 .card p{
 color:#cbd5e1;
 font-size:17px;
+margin-bottom:15px;
+}
+
+.card a{
+text-decoration:none;
+color:white;
+background:#38bdf8;
+padding:10px 20px;
+border-radius:30px;
+display:inline-block;
+margin-top:10px;
 }
 
 footer{
@@ -158,10 +177,11 @@ padding:30px;
 text-align:center;
 background:rgba(255,255,255,0.05);
 margin-top:50px;
-font-size:16px;
+font-size:18px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -183,15 +203,13 @@ font-size:16px;
 
 <h1>Find Help Instantly</h1>
 
-<p>Doctors • Ambulance • Cabs • Electricians • Emergency Help</p>
+<p>Doctors • Hotels • Cab • Emergency • Local Services</p>
 
-<input type="text" class="search" placeholder="Search services near you...">
+<input type="text" class="search" placeholder="Search services in Lucknow...">
 
 <button class="btn">Get Started</button>
 
 <button class="sos">🚨 SOS Emergency</button>
-
-<br><br>
 
 <a href="https://wa.me/919999999999">
 <button class="btn">WhatsApp Support</button>
@@ -199,46 +217,124 @@ font-size:16px;
 
 </section>
 
+<h1 class="section-title">🏥 Top Hospitals in Lucknow</h1>
+
 <section class="services">
 
 <div class="card">
-<h2>👨‍⚕️ Doctors</h2>
-<p>Find trusted nearby doctors instantly.</p>
+<h2>SGPGI</h2>
+<p>Top medical hospital in Lucknow.</p>
+<a href="https://maps.google.com">Open Map</a>
 </div>
 
 <div class="card">
-<h2>🚕 Cab Service</h2>
-<p>Quick cab booking near your location.</p>
+<h2>KGMU</h2>
+<p>King George Medical University.</p>
+<a href="https://maps.google.com">Open Map</a>
+</div>
+
+<div class="card">
+<h2>Ram Manohar Lohia Hospital</h2>
+<p>Advanced emergency services.</p>
+<a href="https://maps.google.com">Open Map</a>
+</div>
+
+</section>
+
+<h1 class="section-title">🏨 Hotels</h1>
+
+<section class="services">
+
+<div class="card">
+<h2>Taj Mahal Hotel</h2>
+<p>Luxury hotel in Lucknow.</p>
+<a href="https://maps.google.com">Open Map</a>
+</div>
+
+<div class="card">
+<h2>Clarks Avadh</h2>
+<p>Popular premium hotel.</p>
+<a href="https://maps.google.com">Open Map</a>
+</div>
+
+</section>
+
+<h1 class="section-title">🚕 Cab Services</h1>
+
+<section class="services">
+
+<div class="card">
+<h2>Uber</h2>
+<p>Book rides instantly.</p>
+<a href="https://www.uber.com">Open</a>
+</div>
+
+<div class="card">
+<h2>Ola</h2>
+<p>Nearby cabs available.</p>
+<a href="https://www.olacabs.com">Open</a>
+</div>
+
+</section>
+
+<h1 class="section-title">🚨 Emergency Numbers</h1>
+
+<section class="services">
+
+<div class="card">
+<h2>🚓 Police</h2>
+<p>112</p>
 </div>
 
 <div class="card">
 <h2>🚑 Ambulance</h2>
-<p>Emergency medical support anytime.</p>
-</div>
-
-<div class="card">
-<h2>🔧 Electrician</h2>
-<p>Verified electricians near you.</p>
-</div>
-
-<div class="card">
-<h2>🚓 Police</h2>
-<p>Emergency Number: 112</p>
+<p>108</p>
 </div>
 
 <div class="card">
 <h2>🔥 Fire Brigade</h2>
-<p>Emergency Number: 101</p>
+<p>101</p>
+</div>
+
+<div class="card">
+<h2>👩 Women Helpline</h2>
+<p>1090</p>
+</div>
+
+</section>
+
+<h1 class="section-title">🔧 Basic Services</h1>
+
+<section class="services">
+
+<div class="card">
+<h2>Electrician</h2>
+<p>Trusted electrician services.</p>
+</div>
+
+<div class="card">
+<h2>Plumber</h2>
+<p>Quick plumbing support.</p>
+</div>
+
+<div class="card">
+<h2>Mechanic</h2>
+<p>Vehicle repair services.</p>
+</div>
+
+<div class="card">
+<h2>Home Cleaning</h2>
+<p>Professional cleaning workers.</p>
 </div>
 
 </section>
 
 <footer>
 
-<p>© 2026 HelpTech07 | Built for Smart Emergency Help</p>
+<p>© 2026 HelpTech07</p>
+<p>Owner : Aryan Kumar</p>
 
 </footer>
 
 </body>
-</html>
 </html>
