@@ -1,16 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>HelpTech07</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0f172a;
+color:white;
+}
+
+header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#111827;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:20px;
+color:#cbd5e1;
+}
+
+.btn{
+padding:15px 30px;
+background:#38bdf8;
+border:none;
+border-radius:10px;
+font-size:18px;
+cursor:pointer;
+margin-top:20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111827;
+margin-top:40px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>Welcome to HelpTech07</h1>
+<header>
 
-<p>Doctors, cabs and emergency services near you.</p>
+<div class="logo">HelpTech07</div>
 
-<button>Find Doctor</button>
+<nav>
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Emergency</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Find Help Near You</h1>
+
+<p>Doctors, Cabs, Emergency and Local Services</p>
+
+<button class="btn">Get Started</button>
+
+</section>
+
+<section class="services">
+
+<div class="card">
+<h2>👨‍⚕️ Doctors</h2>
+<p>Find nearby doctors instantly</p>
+</div>
+
+<div class="card">
+<h2>🚕 Cab Service</h2>
+<p>Book nearby cab quickly</p>
+</div>
+
+<div class="card">
+<h2>🚑 Emergency</h2>
+<p>24x7 emergency support</p>
+</div>
+
+<div class="card">
+<h2>🔧 Electrician</h2>
+<p>Trusted workers near you</p>
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 HelpTech07 | All Rights Reserved</p>
+
+</footer>
 
 </body>
 </html>
