@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>HelpTech07 | India Smart Emergency Platform</title>
+<title>HelpTech07</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
@@ -35,7 +35,7 @@ padding:20px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.4);
+background:rgba(0,0,0,0.5);
 backdrop-filter:blur(10px);
 z-index:1000;
 }
@@ -59,9 +59,9 @@ nav a:hover{
 color:#38bdf8;
 }
 
-/* HERO */
+/* HERO SECTION */
 
-.hero{ .hero{
+.hero{
 height:100vh;
 display:flex;
 flex-direction:column;
@@ -70,6 +70,7 @@ align-items:center;
 text-align:center;
 padding:20px;
 position:relative;
+
 background:url('https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1920') no-repeat center center/cover;
 }
 
@@ -80,14 +81,12 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.6);
+background:rgba(0,0,0,0.65);
 }
 
 .hero *{
 position:relative;
 z-index:1;
-}
-;
 }
 
 .hero h1{
@@ -98,7 +97,7 @@ text-shadow:0 0 20px #38bdf8;
 
 .hero p{
 font-size:24px;
-color:#cbd5e1;
+color:#e2e8f0;
 margin-bottom:30px;
 max-width:800px;
 }
@@ -153,7 +152,7 @@ animation:pulse 1s infinite;
 100%{transform:scale(1);}
 }
 
-/* SECTION */
+/* SECTION TITLE */
 
 .section-title{
 text-align:center;
@@ -161,6 +160,8 @@ font-size:45px;
 margin:70px 0 30px;
 color:#38bdf8;
 }
+
+/* CARDS */
 
 .services{
 display:grid;
@@ -243,6 +244,24 @@ margin-bottom:10px;
 color:#38bdf8;
 }
 
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+}
+
 </style>
 
 </head>
@@ -262,13 +281,15 @@ color:#38bdf8;
 
 </header>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <h1>Find Help Instantly</h1>
 
-<p>India’s Smart Emergency & Local Service Platform</p>
+<p>Lucknow Smart Emergency & Local Services Platform</p>
 
-<input type="text" id="searchInput" class="search-box" placeholder="Search hospitals, hotels, cabs, emergency services...">
+<input type="text" id="searchInput" class="search-box" placeholder="Search hospitals, hotels, cabs...">
 
 <div class="hero-buttons">
 
@@ -276,7 +297,7 @@ color:#38bdf8;
 <button class="btn sos">🚨 SOS Emergency</button>
 </a>
 
-<a href="https://wa.me/918417833855" target="_blank">
+<a href="https://wa.me/919999999999" target="_blank">
 <button class="btn primary">WhatsApp Support</button>
 </a>
 
@@ -400,7 +421,7 @@ color:#38bdf8;
 
 </section>
 
-<!-- FLOATING SOS -->
+<!-- FLOATING BUTTON -->
 
 <a href="tel:112" class="float-btn">
 <i class="fa-solid fa-phone"></i>
@@ -412,15 +433,15 @@ color:#38bdf8;
 
 <h2>HelpTech07</h2>
 
-<p>India Smart Emergency & Local Services Platform</p>
+<p>Lucknow Smart Emergency & Local Services Platform</p>
 
 <br>
 
-<p>Owner: Aryan Kumar</p>
+<p>Owner : Aryan Kumar</p>
 
 </footer>
 
-<!-- SEARCH SCRIPT -->
+<!-- SEARCH SYSTEM -->
 
 <script>
 
